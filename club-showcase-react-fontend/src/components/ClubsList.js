@@ -3,8 +3,6 @@ import { deleteClubs } from '../actions/clubActions';
 import { connect } from 'react-redux';
 
 class ClubsList extends React.Component {
-
-
   handleShow(res) {
     window.location.replace(`http://localhost:4000/club/${res.id}`)
   }
@@ -21,7 +19,6 @@ class ClubsList extends React.Component {
       this.props.clubs.map(club => 
         <div key={club.id} className="clubCard">
           
-
           <div>
           <h5 className="club-name-list-title"> <span className="club-name-list">{club.name}</span></h5>
           <h5 className="club-summary-list">Club Desctiption:</h5>
