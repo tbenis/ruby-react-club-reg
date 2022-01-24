@@ -28,3 +28,29 @@ export const getClub = (id) => {
         })
     }
 }
+
+export const createClub = (userInput) => {
+    let _data = {
+      name: userInput.name,
+      description: userInput.description,
+      summary: userInput.summary,
+      date_founded: userInput.dateCreated
+    }
+
+    const configObj = {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+        },
+        body: JSON.stringify(_data)
+    }
+    
+    return(dispatch) => {
+        fetch('http://localhost:3000/clubs', configObj)
+        .then(response => response.json())
+        .then(json => {
+            dispatch({ type: 'CREATE_CLUB', payload: json['data'] }) 
+        })
+    }
+}
