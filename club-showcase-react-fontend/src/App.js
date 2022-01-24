@@ -14,6 +14,11 @@ import Club from "./components/Club";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {
+  componentDidMount() {
+    console.log(this.props);
+    this.props.fetchClubsWithDispatch();
+  }
+
   render() {
     return (
       <Router>
