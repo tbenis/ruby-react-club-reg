@@ -1,3 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto+Slab:wght@300;500&family=Roboto:ital,wght@0,500;1,500&display=swap");
+
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  background-image: url("./resources/cheap_diagonal_fabric.png");
+}
+
+header {
+  background-color: rgb(207, 34, 223);
+  padding: 1%;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 16px;
+}
+
+a:link {
+  font-size: 150%;
+  padding: 2%;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.actionButton {
+  background: linear-gradient(135deg, #edfe03, #b408cd);
+  border-color: rgb(63, 63, 63);
+  border-radius: 8px;
+  border-width: 1px;
+  font-size: 16px;
+  margin-top: -24px;
+  margin-right: 2px;
+  display: inline-block;
+  width: 103px;
+  height: 30px;
+}
+
+.form {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: rgb(255, 177, 66);
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5%;
+  margin-left: 20%;
+}
+
+.new-res,
+.old-res {
+  display: block;
+  padding: 100px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fec403, #fb5626);
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 5%;
+  margin-left: 20%;
+  color: white;
+}
+
+.old_res {
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+}
+
+.datepicker,
+.description,
+.summary,
+.name1 {
+  display: block;
+  position: relative;
+  top: 3px;
+  left: 10px;
+  margin-top: 10px;
+  margin-right: 80%;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 5px;
+}
+
+.club-name {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 60px;
+  /* font-family: 'Roboto', sans-serif; */
+}
+.club-description {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 20px;
+  /* font-family: 'Roboto', sans-serif; */
+}
+.club-name-list-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+}
+
+.club-summary-list {
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+}
+.club-summary-list {
+  font-family: "Roboto Slab", serif;
+}
+
+.descibing {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 15px;
+  color: black;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+.datepicker-label,
+.summary-label,
+.name-label {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 3px;
+  margin-top: 0px;
+  margin-right: 94%;
+  border-radius: 8px;
+}
+
+.input {
+  display: block;
+  position: relative;
+  top: 3px;
+  left: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 80%;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 5px;
+}
+
+button {
+  background: linear-gradient(135deg, #edfe03, #b408cd);
+  border-color: rgb(63, 63, 63);
+  border-radius: 8px;
+  border-width: 1px;
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+}
+.add-club-button {
+  position: relative;
+  top: 40px;
+}
+
+.add-club-button:hover {
+  background: linear-gradient(135deg, #edfe03, #b408cd);
+  width: 250px;
+  height: 50px;
+  position: relative;
+  top: 40px;
+}
+
+.actionButton:hover {
+  background: linear-gradient(135deg, #edfe03, #b408cd);
+  width: 120px;
+  height: 36px;
+}
+
+.createClubLink {
+  color: rgba(247, 241, 227, 1);
+}
+
+.clubsLink {
+  color: rgb(44, 44, 84);
+}
+.createClubLink:hover {
+  color: linear-gradient(135deg, #fec403, #fb5626);
+}
+
+.clubsLink:hover {
+  color: linear-gradient(135deg, #fec403, #fb5626);
+}
+
+footer {
+  margin: 0 auto;
+  width: 100%;
+  background: linear-gradient(135deg, #fe6703de, #b408cd);
+  border-top: 0.0625em solid lightgrey;
+  bottom: 0;
+  color: #000000;
+  height: 5em;
+  /* position: absolute; */
+}
+footer:before,
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer p {
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 1.25em;
+}
 
 
 
