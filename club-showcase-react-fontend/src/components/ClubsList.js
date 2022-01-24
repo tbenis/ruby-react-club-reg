@@ -1,4 +1,5 @@
 import React from 'react';
+import { deleteClubs } from '../actions/clubActions';
 import { connect } from 'react-redux';
 
 class ClubsList extends React.Component {
@@ -6,6 +7,13 @@ class ClubsList extends React.Component {
 
   handleShow(res) {
     window.location.replace(`http://localhost:4000/club/${res.id}`)
+  }
+
+  handleDelete(res) {
+    let r = window.confirm("Are you sure you want to remove this club?");
+    if (r === true) {
+      this.props.deleteClubsWithDispatch(res)
+    }
   }
 
   render() {
@@ -20,6 +28,7 @@ class ClubsList extends React.Component {
           <p className="club-summary-listing">{club.summary}</p>
           <br/>
             <button className="actionButton" onClick={() => this.handleShow(club)}> Club Details</button>
+            <button className="actionButton" onClick={() => this.handleDelete(club)}>Delete</button>
           </div>
           
           <br/>
