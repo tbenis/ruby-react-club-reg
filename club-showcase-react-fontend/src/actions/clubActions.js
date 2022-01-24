@@ -10,6 +10,14 @@ export const fetchClubs = () => {
     }
 }
 
+export const deleteClubs = (clubObject) => {
+    return(dispatch) => {
+        fetch(`http://localhost:3000/clubs/${clubObject.id}.json`, { method: "DELETE" })
+        .then(res => {
+            dispatch({ type: 'DELETE_CLUB', payload: clubObject }) 
+        })
+    }
+}
 
 export const getClub = (id) => {
     return (dispatch) => {   
