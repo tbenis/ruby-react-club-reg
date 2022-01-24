@@ -9,3 +9,14 @@ export const fetchClubs = () => {
         })
     }
 }
+
+
+export const getClub = (id) => {
+    return (dispatch) => {   
+        fetch(`http://localhost:3000/clubs/${id}.json`).then(response => {
+            return response.json()
+        }).then(responseJSON => {
+            dispatch({ type: 'GET_CLUB', club: responseJSON })
+        })
+    }
+}
