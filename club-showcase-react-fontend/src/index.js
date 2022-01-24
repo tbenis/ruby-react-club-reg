@@ -4,8 +4,23 @@ import App from "./App";
 import "./index.css";
 
 import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+
+import clubsReducer from "./reducers/clubsReducer.js";
+import { combineReducers } from "redux";
+
+const allReducers = combineReducers({
+  clubsReducer,
+});
+
+const store = createStore(allReducers, applyMiddleware(thunk));
+
 ReactDOM.render(
-    <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById("root")
 );
 
