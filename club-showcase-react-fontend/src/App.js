@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
+import { connect } from "react-redux";
 import { fetchClubs } from "./actions/clubActions";
 
 import Navigation from "./components/Navigation.js";
@@ -20,6 +21,10 @@ class App extends Component {
           <header className="app-header">
             <Navigation />
           </header>
+          <Route exact path="/" render={(routerProps) => (
+              <ClubsList {...routerProps} clubs={this.props.clubs} />
+            )}
+          />
           <Route path="/club/:id" render={(routerProps) => (
               <Club {...routerProps} club={this.props.club} />
             )}
