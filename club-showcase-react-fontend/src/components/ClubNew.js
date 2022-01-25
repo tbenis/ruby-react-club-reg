@@ -39,14 +39,16 @@ class ClubNew extends React.Component {
   render() {
     return (
       <>
+        
         <form className="new-res" onSubmit={this.onFormSubmit}>
+        <h2> Please Enter your Club's information below</h2>
           <label htmlFor="name" className="name-label">
             Club Name
           </label>
           <input
             className="input"
             name="name"
-            className="name1"
+            className="name1 formBox"
             type="text"
             placeholder="Club Name"
             onChange={this.handleOnChange}
@@ -56,7 +58,7 @@ class ClubNew extends React.Component {
           </label>
           <textarea
             type="text"
-            className="summary"
+            className="summary formBox"
             name="summary"
             onChange={this.handleOnChange}
             placeholder="Summary"
@@ -66,7 +68,7 @@ class ClubNew extends React.Component {
           </label>
           <textarea
             type="text"
-            className="description"
+            className="description formBox"
             name="description"
             onChange={this.handleOnChange}
             placeholder="Description"
@@ -76,11 +78,12 @@ class ClubNew extends React.Component {
           </label>
           <DatePicker
             id="date"
-            className="datepicker"
+            className="datepicker formBox"
             selected={this.state.date_founded}
             onChange={this.handleDateChange}
             name="date"
             dateFormat="MM/dd/yyyy"
+            placeholderText="Date Founded"
           />{" "}
           <button type="submit" className="add-club-button">
             Add Club

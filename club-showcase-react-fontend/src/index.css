@@ -82,19 +82,17 @@ a {
   left: 50px;
 }
 
-.datepicker,
-.description,
-.summary,
-.name1 {
+.formBox {
   display: block;
   position: relative;
   top: 3px;
   left: 10px;
-  margin-top: 10px;
-  margin-right: 80%;
+  margin-top: 40px;
+  margin-right: auto;
   border-radius: 8px;
   border-width: 1px;
-  padding: 5px;
+  /* padding: 5px; */
+  margin-left: auto;
 }
 
 .club-name {
@@ -130,13 +128,14 @@ a {
 .datepicker-label,
 .summary-label,
 .name-label {
-  display: block;
+  display: none;
+  /* display: block;
   position: relative;
   top: 10px;
   left: 3px;
   margin-top: 0px;
   margin-right: 94%;
-  border-radius: 8px;
+  border-radius: 8px; */
 }
 
 .input {
@@ -180,7 +179,9 @@ button {
   height: 36px;
 }
 
-.createClubLink {
+.createClubLink,
+.aboutLink,
+.clubsLink {
   color: rgba(247, 241, 227, 1);
 }
 /*    ABOUT PAGE      */
@@ -222,13 +223,6 @@ blockquote p::before {
 
 blockquote p::after {
   content: '\201D';
-}
-.createClubLink:hover {
-  color: linear-gradient(135deg, #fec403, #fb5626);
-}
-
-.clubsLink:hover {
-  color: linear-gradient(135deg, #fec403, #fb5626);
 }
 
 footer {
