@@ -26,12 +26,11 @@ header {
   font-size: 150%;
   padding: 2%;
   font-weight: bold;
+  text-decoration: none;
+
 }
 
-.navLink {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
+
 
 .actionButton {
   background: linear-gradient(135deg, #edfe03, #b408cd);

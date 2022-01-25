@@ -31,16 +31,16 @@ class App extends Component {
               <ClubsList {...routerProps} clubs={this.props.clubs} />
             )}
           />
-          <Route path="/clubs/new" render={(routerProps) => (
-              <ClubNew {...routerProps} clubs={this.props.clubs} />
+          <Route path="/clubs/new" render={() => (
+              <ClubNew  />
             )}
           />
           <Route path="/club/:id" render={(routerProps) => (
               <Club {...routerProps} club={this.props.club} />
             )}
           />
-        <Route path="/about" render={(routerProps) => (
-              <About {...routerProps} clubs={this.props.clubs} />
+        <Route path="/about" render={() => (
+              <About />
             )}
           />
         </div>

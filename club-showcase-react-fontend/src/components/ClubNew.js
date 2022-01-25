@@ -33,7 +33,7 @@ class ClubNew extends React.Component {
   onFormSubmit(e) {
     e.preventDefault();
     this.props.createClubWithDispatch(this.state);
-    window.location.replace(`http://localhost:4000/clubs`);
+    window.location.replace(`http://localhost:4000/`);
   }
 
   render() {
