@@ -4,9 +4,12 @@ import { default as Img } from "./AboutImage";
 export default class About extends Component {
   render() {
     return (
+      <div className="about-container">
         <h3 className="about-title">About me </h3>
         <Img />
+        <br /> <br />
         <p className="about-subtitle"> Hi there! My name is Benis</p>
+        <br />
         <p className="about-p1">
           I am currently a student at the Unniversity of Maryland, College Park
           studying Information Science (major), Computer Science (minor), and
@@ -28,6 +31,20 @@ export default class About extends Component {
           </a>
           ).
         </p>
+        <br />
+        <p> My Favorite quote is:</p>
+        <figure>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>
+            Everything is Figureoutable.
+            </p>
+          </blockquote>
+          <figcaption>
+            —Marie Forleo, <cite>Everything is Figureoutable</cite>
+          </figcaption>
+        </figure>
+        <br />
+      </div>
     );
   }
 }
