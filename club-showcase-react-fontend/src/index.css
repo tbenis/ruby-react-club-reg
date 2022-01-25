@@ -183,6 +183,10 @@ button {
 .createClubLink {
   color: rgba(247, 241, 227, 1);
 }
+.about-image {
+  max-width: 400px;
+  /* align-items: center; */
+}
 
 .clubsLink {
   color: rgb(44, 44, 84);

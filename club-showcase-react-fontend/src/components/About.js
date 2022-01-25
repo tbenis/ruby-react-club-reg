@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import React, { Component } from 'react';
-
+import { default as Img } from "./AboutImage";
 
 export default class About extends Component {
   render() {
     return (
         <h3 className="about-title">About me </h3>
+        <Img />
         <p className="about-subtitle"> Hi there! My name is Benis</p>
         <p className="about-p1">
           I am currently a student at the Unniversity of Maryland, College Park
