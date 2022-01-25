@@ -10,6 +10,8 @@ class Club extends React.Component {
   render() {
     if (this.props) {
       return (
+        <>
+        <br /><br /><br />
         <div className="old-res">
           <h5 className="club-name">{this.props.club.name}</h5>
            <br /> <br /> 
@@ -17,7 +19,10 @@ class Club extends React.Component {
           <h5 className="club-description">Club Desctiption:</h5>
            
            <br/><p className="descibing">{this.props.club.description}</p> 
-        </div>       
+        </div>  
+
+        <br /><br /><br />
+        </>      
       )
     } else {
       return (
