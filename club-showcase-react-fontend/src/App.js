@@ -10,6 +10,7 @@ import ClubsList from "./components/ClubsList";
 import ClubNew from "./components/ClubNew";
 import Footer from "./components/Footer";
 import Club from "./components/Club";
+import About from "./components/About";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -36,6 +37,10 @@ class App extends Component {
           />
           <Route path="/club/:id" render={(routerProps) => (
               <Club {...routerProps} club={this.props.club} />
+            )}
+          />
+        <Route path="/about" render={(routerProps) => (
+              <About {...routerProps} clubs={this.props.clubs} />
             )}
           />
         </div>
